@@ -1,0 +1,51 @@
+#!markdown
+
+Get PowerShell information
+
+#!pwsh
+
+$PSVersionTable
+
+#!markdown
+
+Access an object property
+
+#!pwsh
+
+$PSVersionTable.PSVersion
+
+#!markdown
+
+Get cmdlet
+
+#!pwsh
+
+Get-Verb
+
+#!markdown
+
+Find commands
+
+#!pwsh
+
+Get-Command -Verb Get -Noun AdlAnalytics*
+
+#!markdown
+
+Pipe
+
+#!pwsh
+
+ipconfig.exe | Select-String -Pattern 'IPv4'
+
+#!pwsh
+
+@(1,2,3) | Measure-Object
+
+#!pwsh
+
+@{"One"=1;"Two"=2} | Measure-Object
+
+#!pwsh
+
+Get-Process | Get-Member
